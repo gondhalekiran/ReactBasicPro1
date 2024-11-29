@@ -1,21 +1,30 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+const Register = lazy(() => import("./Pages/Client/Register"));
+
 const Home = lazy(() => import("./Pages/Home"));
-const About = lazy(() => import("./Pages/About"));
+const PropsObjectOrDestructured = lazy(() => import("./Pages/PropsObjectOrDestructured"));
 const AdminLogin = lazy(() => import("./Pages/Admin/AdminLogin"));
-
+const MultipleComponentFromSameFile = lazy(() => import("./Pages/MultipleComponentFromSameFile"))
+const CLogin = lazy(() => import("./Pages/Client/CLogin"));
+const VariableCalls = lazy(() => import("./Pages/VariableCalls"));
+const Props = lazy(() => import("./Pages/Props"));
 function App() {
- 
-
   return (
     <>
       <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Admin" element={<AdminLogin />} />
+            <Route path="/propsObjectOrDestructured" element={<PropsObjectOrDestructured />} />
+            <Route path="/admin" element={<AdminLogin />} />
+            <Route path="/login" element={<CLogin/>} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/multipleComponentFromSameFile" element = {<MultipleComponentFromSameFile/>}/>
+            <Route path="/variableCalls" element = {<VariableCalls/>}/>
+            <Route path="/props" element = {<Props/>}/>
+            
           </Routes>
         </Suspense>
       </BrowserRouter>

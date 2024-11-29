@@ -1,17 +1,17 @@
 import React from "react";
-import VariableAsProps from "../../Components/VariableAsProps";
+
+import Header from "../../Components/Header";
 
 
 const AdminLogin = () => {
   const brand="Audi";
   return (
     <>
-     
+     <Header/>
       <h1>AdminLogin </h1>
-      <VariableAsProps/>
-      
+     
     </>
   );
-};
+}
 
 export default AdminLogin;
