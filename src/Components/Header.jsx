@@ -17,6 +17,7 @@ const Header = () => {
           <Link to="/multipleComponentFromSameFile" style={styles.link}>
             MultipleComponentFromSameFile
           </Link>
+          <Link to="/profile" style={styles.link}>Profile</Link>
           <Link to="/" style={styles.link}>
             Home
           </Link>

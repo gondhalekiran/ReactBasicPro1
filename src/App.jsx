@@ -10,6 +10,8 @@ const MultipleComponentFromSameFile = lazy(() => import("./Pages/MultipleCompone
 const CLogin = lazy(() => import("./Pages/Client/CLogin"));
 const VariableCalls = lazy(() => import("./Pages/VariableCalls"));
 const Props = lazy(() => import("./Pages/Props"));
+const ProfileGet = lazy(() => import("./Pages/Client/ProfileGet"));
+
 function App() {
   return (
     <>
@@ -24,6 +26,7 @@ function App() {
             <Route path="/multipleComponentFromSameFile" element = {<MultipleComponentFromSameFile/>}/>
             <Route path="/variableCalls" element = {<VariableCalls/>}/>
             <Route path="/props" element = {<Props/>}/>
+            <Route path="/profile" element={<ProfileGet/>}></Route>
             
           </Routes>
         </Suspense>
