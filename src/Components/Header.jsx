@@ -22,7 +22,7 @@ const Header = () => {
             Home
           </Link>
           <Link to="/register" style={styles.link}>
-            Register
+            RegisterPost
           </Link>
           <Link to="/admin" style={styles.link}>
             Admin

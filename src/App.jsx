@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Register = lazy(() => import("./Pages/Client/Register"));
+const Register = lazy(() => import("./Pages/Client/RegisterPost"));
 
 const Home = lazy(() => import("./Pages/Home"));
 const PropsObjectOrDestructured = lazy(() => import("./Pages/PropsObjectOrDestructured"));
